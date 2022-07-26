@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<style type="text/css">
+		table,th,td{
+			border: 1px solid black;
+
+		}
+
+		table{
+			border-collapse: collapse;
+			width: 80%;
+			
+			margin: 200px 100px;
+			position: absolute;
+
+		}
+		th{
+			text-align: left;
+			height: 30px;
+			font-weight: bold;
+		}
+		td{
+			height: 30px;
+		}
+
+		.fa-eye{
+			color: #5DADE2;
+		}
+
+		.fa-pencil{
+			color: #F1C40F;
+		}
+
+
+		.fa-trash{
+			color: #E74C3C;
+		}
+		.first{
+			border: 1px solid ;
+		}
+		.heading{
+			position: absolute;
+			margin: 120px 600px;
+			font-size: 30px;
+		}
+		.second{
+			font-weight: bold;
+		}
+		.search{
+			border: 2px solid ;
+			width: 200px;
+			position: absolute;
+			margin-left: 1130px;
+			margin-top: 130px;
+		    
+		}
+		.third{
+			color: #797D7F;
+
+		}
+		.fifth,.fourth{
+			font-weight: bold;
+		}
+		div {
+			display: inline;
+
+		}
+		b{
+			font-weight: lighter;
+		}
+		.index1{
+			background-color: #ECF0F1;
+			border: 1px solid #ECF0F1;
+			padding: 5px;
+
+		}
+		.indx3{
+			background-color: #ECF0F1;
+			border: 1px solid #ECF0F1;
+			border-radius: 30px;
+			padding:10px;
+			
+			
+		}
+		#selection{
+			background-color: #5DADE2;
+		}
+		.result{
+			margin-left: 110px;
+			margin-top: 430px;
+			position: absolute;
+		}
+		.sort{
+			position: absolute;
+			margin-left: 110px;
+			margin-top: 130px;
+		}
+		.index{
+			margin-left: 1045px;
+			margin-top: 430px;
+			position: absolute;
+
+		}
+		
+	</style>
+</head>
+<body>
+	<p class="sort">show <span class="first">5<i class="fa fa-angle-down"></i></span> entries</p>
+	<p class="heading">Customer <span class="second">Details</span></p>
+	<div class="search"><span class="third">search</span></div>
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Name <i class="fa fa-sort"></i></th>
+			<th>Address</th>
+			<th>city <i class="fa fa-sort"></th>
+			<th>Pincode</th>
+			<th>Country <i class="fa fa-sort"></th>
+			<th>Action</th>
+
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Thomas Hardy</td>
+			<td>89 Chiarsco Rd</td>
+			<td>Portland</td>
+			<td>912119</td>
+			<td>USA</td>
+			<td> <i class="fa fa-eye "></i> 
+			<i class="fa fa-pencil"></i>
+		    <i class="fa fa-trash"></i></td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>Maria Anders</td>
+			<td>Obere Str.57</td>
+			<td>Berlin</td>
+			<td>12209</td>
+			<td>Gemany</td>
+			<td><i class="fa fa-eye "></i> 
+			<i class="fa fa-pencil"></i>
+		    <i class="fa fa-trash"></i></td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Fran Wilson</td>
+			<td>C/Araquil,67</td>
+			<td>Madrid</td>
+			<td>28023</td>
+			<td>France</td>
+			<td><i class="fa fa-eye "></i> 
+			<i class="fa fa-pencil"></i>
+		    <i class="fa fa-trash"></i></td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Dominic Perrier</td>
+			<td>25,rue Lauriston</td>
+			<td>Paris</td>
+			<td>75016</td>
+			<td>France</td>
+			<td><i class="fa fa-eye "></i> 
+			<i class="fa fa-pencil"></i>
+		    <i class="fa fa-trash"></i></td>
+		</tr>
+
+		<tr><td>5</td>
+			<td>Martin Blank</td>
+			<td>Via Monteblanco 34</td>
+			<td>Turin</td>
+			<td>10100</td>
+			<td>Italy</td>
+			<td><i class="fa fa-eye "></i> 
+			<i class="fa fa-pencil"></i>
+		    <i class="fa fa-trash"></i></td>
+		</tr>
+
+	</table>
+	
+   <p class="result">Showing <span  class="fourth">5</span>  out of <span class="fifth">25</span> entries</p>
+    
+
+   
+   	<div class="index">
+   		<b class="index1">Previous</b>
+   		<b class ="indx3">1</b>
+   		<b class="indx3" >2</b>
+   		<b class="indx3" id="selection">3</b>
+   		<b class="indx3">4</b>
+   		<b class="indx3">5</b>
+   		<b class="index1">Next</b>
+   	</div>
+   
+   	
+   
+</body>
+</html>

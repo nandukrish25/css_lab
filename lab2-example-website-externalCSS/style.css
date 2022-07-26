@@ -1,0 +1,30 @@
+
+		 body{
+		 	margin: 0;
+		 	padding: 0;
+		 	font-family:  "Segoe UI"; 
+		 	background-color: #f0f0f2;
+		 }
+		div{
+			width: 600px;
+			margin:80px auto;
+			padding: 32px;
+			border-radius: 8px;
+			background-color: #fdfdff;
+
+		}
+		a:link{
+			color: #38488f;
+			text-decoration: none;
+		}
+		a:visited{
+			color:#38488f ;
+		} 
+		@media only screen and (max-width=600px){
+			div{
+				margin:0 auto;
+				width: auto;
+				background-color:red;
+			}
+		}
+	
